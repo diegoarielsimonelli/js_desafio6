@@ -35,4 +35,8 @@ condicion= confirm("¿Querés seguir agregando productos?")
 let producto1 = ["hamburgueza de lenteja",400,300];
 let producto2 = ["ensalada",240,190];
 let nuevasCompras=producto.concat(producto2,producto1);
+producto.sort(function(a,b){
+    return a.precio - b.precio;
+}); // ordena los productos por precio de menor a mayor
 console.log(nuevasCompras.join("\n"));
+
